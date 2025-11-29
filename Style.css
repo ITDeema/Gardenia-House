@@ -1,0 +1,3970 @@
+
+
+
+
+
+
+body {
+background-color: #f8f7f4;
+margin: 0;
+font-family: "Times New Roman", Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================Header=========================== */
+
+
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #d9d4eb;
+padding: 0.9375em 2.5em;
+border-bottom: 0.1875em solid #b8aedf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+header img {
+width: 9.375em;
+height: 9.375em;
+margin-right: 2.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================Navigation Bar=========================== */
+
+
+
+
+nav {
+display: flex;
+margin-right: 0.9375em;
+justify-content: center;
+align-items: center;
+gap: 5.625em;
+}
+
+
+
+
+
+
+
+
+
+nav a {
+text-decoration: none;
+color: #333;
+font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===========================Links when hovered=========================== */
+
+
+nav a:hover {
+color: #6c63ff;
+}
+
+
+
+
+
+
+
+nav a.active {
+color: #6c63ff;
+text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== BREADCRUMBS ========== */
+
+
+
+
+
+
+
+
+
+
+.breadcrumbs {
+font-size: 0.95em;
+margin: 0;
+padding: 0.625em 2.5em;
+background-color: #e8e2f4;
+color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+.breadcrumbs a {
+color: #6c63ff;
+text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.breadcrumbs a:hover {
+text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===========================If page current then it turns grey=========================== */
+.breadcrumbs .current-page {
+color: grey;
+}
+
+
+
+
+
+/* ===========================Mission Section=========================== */
+
+
+
+
+
+
+
+
+.mission {
+text-align: center;
+padding: 2.5em 1.25em;
+border-bottom: 0.0625em solid #b8aedf;
+}
+
+
+
+
+
+
+
+
+
+
+.mission h2 {
+font-size: 1.8em;
+color: #2f3c2f;
+}
+
+
+
+
+
+
+
+
+
+
+.mission p {
+  font-size: 1.1875em;
+  max-width: 700px;      /* keeps your same look on laptop */
+  width: 90%;            /* responsive on small screens */
+  margin: 0.625em auto;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+/* ===========================services Section=========================== */
+
+
+
+
+
+
+
+
+
+
+.service {
+background-color: #fff;
+border-bottom: 0.0625em outset #ccc;
+border-radius: 0.5em;
+width: 17.5em;
+height: 19.375em;
+margin: 0.5em;
+margin-bottom: 1.875em;
+padding: 0.9375em;
+box-sizing: border-box;
+transition: background-color 0.3s, border-color 0.3s;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.service img {
+width: 100%;
+height: 12.5em;
+}
+
+
+
+
+
+
+
+
+
+
+.services h2 {
+margin-top: 1.875em;
+color: #000;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.service-info {
+display: none;
+font-size: 0.9em;
+color: #333;
+margin-top: 0.625em;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.service:hover {
+background-color: #e9e3f7;
+border-color: #b8aedf;
+justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.service:hover img {
+height: 0;
+margin: 0;
+}
+
+
+
+
+
+
+
+
+.service:hover .service-info {
+display: block;
+}
+
+
+
+
+
+
+/* ===========================Fact of the Day=========================== */
+
+
+.fact {
+padding: 3.125em 1.25em;
+text-align: center;
+}
+
+
+.fact h2 {
+margin-top: 0;
+font-size: 1.6em;
+color: #2f3c2f;
+margin-bottom: 1.25em;
+}
+
+
+.fact-flex {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1.5625em;
+flex-wrap: wrap;
+max-width: 56.25em;
+margin: 0 auto;
+}
+
+
+.fact img {
+width: 9.375em;
+height: 9.375em;
+}
+
+
+
+
+.fact p {
+width: 31.25em;
+font-size: 1.0625em;
+line-height: 1.5;
+color: #333;
+margin: 0 auto;
+}
+
+
+
+
+/* ===========================Reviews=========================== */
+
+
+
+
+
+
+
+
+
+
+.reviews {
+background-color: #f3f2f6;
+text-align: center;
+padding: 0.625em 0;
+border-top: 0.09375em solid #b8aedf;
+border-bottom: 0.09375em solid #b8aedf;
+}
+
+
+
+
+
+
+
+
+
+
+.review-container {
+display: flex;
+overflow: auto;
+gap: 13.125em;
+padding: 1.25em 2.5em;
+justify-content: flex-start;
+}
+
+
+
+
+
+
+
+
+.review {
+flex: 0 0 20em;
+background-color: #fff;
+border: 0.09375em solid #b8aedf;
+border-radius: 1.25em;
+padding: 1.25em;
+box-sizing: border-box;
+transition: background-color 0.3s;
+}
+
+
+
+
+
+
+
+
+.user {
+display: flex;
+align-items: center;
+gap: 0.5em;
+margin-bottom: 0.5em;
+}
+
+
+
+
+
+
+
+
+.user img {
+width: 2.5em;
+height: 2.5em;
+border-radius: 50%;
+}
+
+
+
+
+.user h3 {
+font-size: 1em;
+color: #2f3c2f;
+margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.review p {
+font-size: 0.9em;
+color: #333;
+margin: 0.375em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p.stars {
+color: orange;
+font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================services Page=========================== */
+
+
+
+
+
+
+
+
+.services-page {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+padding: 20px 20px;
+gap: 40px;
+margin-top: 10px;
+}
+
+
+
+
+/* ===== FILTER BOX ===== */
+.sort-box {
+background-color: #f3f0fa;
+overflow: auto;
+border: 1px solid #b8aedf;
+border-radius: 8px;
+width: 200px;
+padding: 10px 15px;
+margin-top: 10px;
+}
+
+
+
+
+.sort-box h3 {
+text-align: center;
+color: #3b2d56;
+margin: 0 0 8px 0;
+font-size: 1em;
+font-weight: bold;
+border-bottom: 1px solid #b8aedf;
+padding-bottom: 4px;
+}
+
+
+
+
+.sort-box select {
+width: 100%;
+border: 1px solid #b8aedf;
+border-radius: 5px;
+padding: 5px;
+font-size: 14px;
+background-color: #fff;
+color: #3b2d56;
+}
+
+
+
+
+/* ===== SERVICES LIST ===== */
+.services-list {
+text-align: center;
+max-width: 1000px;
+margin-top: 15px;
+margin-left: -100px;
+ 
+}
+
+
+
+
+.services-list h2 {
+font-size: 2.1em;
+color: #130b21;
+margin-bottom: 25px;
+border-bottom: 2px solid #0f0212;
+display: inline-block;
+padding-bottom: 6px;
+}
+
+
+
+
+
+
+.service-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 35px;
+margin-top: 25px;
+}
+
+
+
+
+/* ===== SERVICE BOX ===== */
+.service-box {
+background-color: #fff;
+font-size: 15px;
+border-bottom: 2px outset #ab9fda;
+border-radius: 10px;
+width: 310px;
+height: 380px;
+padding: 20px;
+box-sizing: border-box;
+transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+
+
+
+/* ===== BOX IMAGE ===== */
+.service-box img {
+width: 100%;
+height: 210px;
+border-radius: 6px;
+object-fit: cover;
+}
+
+
+
+
+/* ===== BOX TEXT ===== */
+.service-box h3 {
+color: #2f3c2f;
+font-size: 1.15em;
+margin: 12px 0 6px 0;
+}
+
+
+
+
+.service-box p {
+font-size: 0.9em;
+color: #333;
+margin: 5px 0;
+}
+
+
+
+
+
+
+.services-wrapper {
+width: 100%;
+display: flex;
+justify-content: flex-start;
+}
+
+
+
+
+.services-page {
+margin-left: 40px;
+}
+
+
+
+
+/* ===== PRICE TAG ===== */
+.price-tag {
+display: inline-block;
+background-color: #e9e3f7;
+color: #3b2d56;
+padding: 5px 12px;
+border-radius: 12px;
+font-weight: bold;
+font-size: 0.9em;
+margin-top: 10px;
+border: 1px solid #b8aedf;
+}
+
+
+
+
+
+
+
+
+/* ===========================Quiz Section=========================== */
+hr {
+border: none;
+border-top: 0.09375em solid #e2d9f3;
+margin: 1.5625em 0;
+}
+
+
+.quiz-section {
+padding: 2.5em 1.25em;
+background-color: #f8f8f4;
+text-align: center;
+}
+
+
+/* ===========================Quiz Form=========================== */
+.quiz-container {
+width: 56.25em;
+margin: 0 auto;
+background-color: #fff;
+border: 0.125em solid #d8c9f0;
+padding: 2.1875em;
+border-radius: 0.5em;
+}
+
+
+.quiz-container h2 {
+color: #3b2d56;
+font-size: 1.8em;
+margin-bottom: 0.625em;
+}
+
+
+
+
+.quiz-container p {
+color: #333;
+font-size: 0.95em;
+margin-bottom: 1.5625em;
+}
+
+
+
+
+.quiz-question {
+text-align: center;
+margin-bottom: 2.1875em;
+
+
+}
+
+
+.quiz-question p {
+color: #3b2d56;
+font-weight: bold;
+}
+
+
+
+
+.quiz-question label {
+display: inline-block;
+width: 22%;
+color: #000;
+font-size: 0.9375em;
+}
+
+
+.quiz-question input {
+margin-right: 0.625em;
+}
+
+
+/*========================Submit button================*/
+.quiz-container button {
+background-color: #3b2d56;
+color: white;
+border: none;
+padding: 0.625em 1.5625em;
+border-radius: 0.3125em;
+font-weight: bold;
+}
+
+
+
+
+
+
+.quiz-container button:hover {
+background-color: #c4b0e6;
+}
+
+
+
+
+
+
+.quiz-result {
+  display: none;
+  text-align: center;
+  margin-top: 20pt;
+  padding: 18pt;
+  border-radius: 12pt;
+  background: #ffffff;
+  border: 1pt solid #b8aedf;
+  box-shadow: 0 3pt 10pt rgba(0,0,0,0.08);
+}
+
+
+
+
+
+/* ===========================Quiz result image=========================== */
+
+
+.result-image {
+width: 11.25em;
+height: 11.25em;
+margin: 1.25em auto;
+border-radius: 0.625em;
+border: 0.125em solid #d8c9f0;
+display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/*LAYAN’S CSS*/
+.layan-dashboard {
+padding: 1.25em 2.5em;
+ color: #3b2d56;
+}
+.layan-dashboard h2 {
+ text-align: center;
+ font-weight: 700;
+ font-size: 1.625em;
+ color: #3b2d56;
+ margin-top: 4em;
+ margin-bottom: 0.3125em;
+ position: relative;
+}
+
+
+
+
+.layan-dashboard h2::after {
+ content: "";
+ display: block;
+ width: 7.5em;
+ height: 0.125em;
+ background-color: #3b2d56;
+ margin: 0.5em auto 0;
+ border-radius: 0.0625em;
+}
+
+
+
+
+
+
+
+
+/* ====== TABLE ====== */
+.layan-table {
+  width: 90%;
+  margin: 1.875em auto;          
+  border-collapse: collapse;
+  background-color: #f9f8ff;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+  border-radius: 0.625em;        
+  overflow: hidden;
+}
+
+
+
+
+.layan-table th {
+  background-color: #d9d4eb;
+  color: #3b2d56;
+  padding: 0.75em;            
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9375em;          
+}
+
+
+
+
+.layan-table td {
+  padding: 0.75em;              
+  border-bottom: 0.0625em solid #e4e0f3;
+  font-size: 0.875em;            
+}
+
+
+
+
+.layan-table tr:nth-child(even) {
+  background-color: #f3f0fa;
+}
+
+
+
+
+.layan-table tr:hover {
+  background-color: #ebe6f8;
+  transition: 0.3s;
+}
+
+
+
+
+/* ===== ADD SUBTLE SHADOW FOR DEPTH ===== */
+.layan-table tr {
+  box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+/* ===== HOVER EFFECT ===== */
+.layan-table tr:hover td {
+  background-color: #f3f1fa;
+  transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== BUTTON ===== */
+.layan-btn {
+background-color: #3b2d56;
+color: white;
+border: none;
+padding: 0.625em 1.5625em;        
+border-radius: 0.625em;          
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+.layan-btn:hover {
+background-color: #c4b0e6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== ACTION BUTTONS CONTAINER ===== */
+.layan-actions {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1.25em;                     
+margin-top: 1.5625em;             
+flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== FORMS ====== */
+.layan-form-section {
+max-width: 37.5em;
+margin: 2.5em auto;
+background-color: #f3f1fa;
+padding: 1.875em 2.5em;
+border-radius: 0.9375em;
+box-shadow: 0 0 0.5em rgba(0,0,0,0.1);
+}
+.layan-form-section label {
+display: block;
+margin-bottom: 0.375em;
+font-weight: 600;
+}
+.layan-form-section input[type="text"],
+.layan-form-section input[type="date"],
+.layan-form-section select,
+.layan-form-section textarea {
+width: 100%;
+padding: 0.625em;
+border: 0.0625em solid #ccc;
+border-radius: 0.5em;
+font-size: 0.9375em;
+margin-bottom: 0.9375em;
+font-family: "Times New Roman", serif;
+}
+.layan-form-section textarea {
+height: 7.5em;
+resize: none;
+}
+/* =====  STAR RATING ===== */
+.layan-star-rating {
+display: inline-flex;
+flex-direction: row-reverse;
+justify-content: flex-start;
+gap: 0.3125em;
+}
+
+.layan-request-form input,
+.layan-request-form select,
+.layan-request-form textarea,
+.layan-evaluation-form input,
+.layan-evaluation-form select,
+.layan-evaluation-form textarea {
+    width: 100%;
+    padding: 0.625em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.5em;
+    font-size: 0.9375em;
+    margin-bottom: 0.9375em;
+    box-sizing: border-box; 
+}
+
+.layan-request-form textarea,
+.layan-evaluation-form textarea {
+    height: 7.5em;
+    resize: vertical;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.layan-star-rating input {
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.layan-star-rating label {
+font-size: 1.75em;
+color: #ccc;
+cursor: pointer;
+transition: color 0.2s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hover effect */
+.layan-star-rating label:hover,
+.layan-star-rating label:hover ~ label {
+color: #f7c948;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* When selected */
+.layan-star-rating input:checked ~ label {
+color: #f7c948;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+border-top: 0.0625em solid #b8aedf;
+border-bottom: 0.0625em solid #b8aedf;
+}
+
+
+
+.layan-request-form .layan-btn,
+.layan-evaluation-form .layan-btn {
+    width: 100% !important;
+    padding: 0.75em 1.5em;
+    background-color: #3b2d56;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.625em;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.layan-request-form .layan-btn:hover,
+.layan-evaluation-form .layan-btn:hover {
+    background-color: #c4b0e6;
+}
+
+
+
+
+
+
+
+/* About  */
+.about {
+padding: 1.875em 2.5em;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+.image-placeholder {
+width: 43.75em;
+height: 21.875em;
+margin: 0 auto;
+display: flex;
+align-items: stretch;
+justify-content: center;
+color: #999;
+}
+
+
+
+
+
+
+
+
+.description {
+margin-top: 1.25em;
+text-align: left;
+padding: 0.312em;
+}
+
+
+
+
+
+
+
+
+.description h3 {
+font-weight: bold;
+margin-bottom: 1.5em;
+margin-left: 0.5em;
+color: #3b2d56;
+font-size: 1.3em;
+}
+
+
+
+
+
+
+
+
+.description p {
+max-width: 75em;
+margin: 0.625em auto;
+}
+/* ===== Staff ===== */
+.article-container {
+padding: 0 3em;
+}
+
+
+
+
+
+
+
+
+.staff-container {
+padding: 1em 0 1em 0;
+}
+
+
+
+
+
+
+
+
+.article-container h3 {
+font-weight: bold;
+margin-bottom: 1.5em;
+margin-left: 0.5em;
+color: #3b2d56;
+font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+.staff-list {
+display: inline-grid;
+grid-auto-flow: column;    
+grid-template-rows: repeat(2, auto);
+gap: 2em 2.5em;
+padding: 1em 2em;
+overflow-x: auto;            
+scroll-behavior: smooth;
+width: 100%;
+box-sizing: border-box;
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.staff-card {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+border: 0.062em solid #ccc;
+padding: 1em;
+border-radius: 1em;
+background-color: #fafafa;
+box-shadow: 0 0.125em 0.375em rgba(0, 0, 0, 0.05);
+width: 16em;
+height: 12em;
+flex-shrink: 0;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+
+
+
+
+
+.staff-card:hover {
+transform: translateY(-0.3em);
+box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+.staff-card img {
+width: 6em;
+height: 6em;
+object-fit: cover;
+border-radius: 0.75em;
+margin-bottom: 0.8em;
+}
+
+
+
+
+
+
+
+
+.staff-card a {
+text-decoration: none;
+color: #3b2d56;
+font-weight: bold;
+font-size: 0.95em;
+transition: color 0.3s;
+}
+
+
+
+
+
+
+
+
+.staff-card a:hover {
+color: #c4b0e6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== FORM ===== */
+.form{
+ border-top: 0.0625em solid #b8aedf;
+ margin: 2em 0 ;
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.join-form {
+position: relative;
+width: 30em;
+border: 0.062em solid #ccc;
+border-radius: 2em;
+padding: 1.5em 2em;
+background-color: #f8f8f8;
+box-shadow: 0 0 0.375em rgba(0, 0, 0, 0.08);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+margin: 2em 0 2em 3em;
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.join-form h3 {
+text-align: center;
+margin-bottom: 1.5em;
+font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+.join-form form {
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 0.75em;
+}
+
+
+
+
+
+
+
+
+.join-form label {
+font-weight: bold;
+font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+.join-form input,
+.join-form textarea {
+padding: 0.5em;
+border-radius: 0.375em;
+border: 0.062em solid #ccc;
+font-size: 0.9em;
+width: 100%;
+}
+
+
+
+
+
+
+
+
+.join-form textarea {
+height: 4.5em;
+resize: none;
+}
+
+
+
+
+
+
+
+
+.join-form button {
+margin-top: 0.625em;
+background-color: #3b2d56;
+color: white;
+border: none;
+padding: 0.625em 1.5em;
+border-radius: 0.312em;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+
+
+
+
+
+
+
+.join-form button:hover {
+background-color: #c4b0e6;
+}
+
+
+
+
+
+
+
+
+/* main table */
+.main-table {
+width: 50%;
+background-color: transparent;
+border-radius: 0.625em;
+box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+overflow: hidden;
+border-collapse: separate;
+margin: 2% auto;
+padding: 0.625em;
+font-family: "Times New Roman", serif;
+border-spacing: 0 12px; /* space between rows */
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.main-table td {
+padding: 1.25em;
+border: 0.062em solid #b8aedf;
+vertical-align: top;
+font-family: "Times New Roman", serif;
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.header-cell {
+background-color: #d9d4eb; /* lavender header */
+color: #3b2d56;
+text-align: center;
+font-size: 1.5em;
+font-weight: bold;
+padding: 1.562em;
+border-bottom: 0.125em solid #b8aedf;
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.profile-section {
+display: flex;
+gap: 1.875em;
+align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+.profile-photo {
+width: 11.25em;
+height: 11.25em;
+border-radius: 50%;
+background-color: #d9d4eb;
+display: flex;
+justify-content: left;
+color: #3b2d56;
+font-weight: bold;
+border: 0.187em solid #3b2d56;
+flex-shrink: 0;
+overflow: hidden;
+position: relative;
+}
+
+
+
+
+
+
+
+
+.profile-photo img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+
+
+
+
+
+
+
+.profile-details {
+flex: 1;
+}
+
+
+
+
+
+
+
+
+.profile-name {
+font-size: 1.75em;
+color: #3b2d56;
+margin-bottom: 1.25em;
+text-align: left;
+align-content: center;
+}
+
+
+
+
+
+
+
+
+/* table titles */
+.section-title {
+background-color: #d9d4eb!important;
+color: #3b2d56;
+font-size: 1.25em;
+font-weight: bold;
+padding: 0.937em 1.25em;
+border-bottom: 0.125em solid #3b2d56;
+text-align: center;
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* AREA */
+.areas-container {
+display: flex;
+flex-wrap: wrap;
+gap: 0.625em;
+margin-top: 0.625em;
+}
+
+
+
+
+
+
+
+
+/* SKILLS */
+.skills-list {
+list-style-type: none;
+padding-right: 1.25em;
+}
+
+
+
+
+
+
+
+
+.skill-item {
+margin-bottom: 0.625em;
+font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.sub-skills {
+list-style-type: none;
+padding-right: 1.562em;
+margin-top: 0.312em;
+}
+
+
+
+
+
+
+
+
+.sub-skill {
+margin-bottom: 0.312em;
+position: relative;
+padding-right: 0.937em;
+font-weight: normal;
+}
+
+
+
+
+
+
+
+
+/* EDUCATION */
+.education-item {
+margin-bottom: 1.25em;
+padding-bottom: 0.937em;
+border-bottom: 0.062em dashed #eaeaea;
+}
+
+
+
+
+
+
+
+
+.education-period {
+font-weight: bold;
+margin-bottom: 0.312em;
+}
+
+
+
+
+
+
+
+
+.education-details {
+padding-right: 0.937em;
+}
+
+
+
+
+
+
+
+
+.education-details li {
+margin-bottom: 0.312em;
+position: relative;
+padding-right: 0.937em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================Ghala=============================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================Deema==============================*/
+/* ================= provider page ================= */
+.page-title {
+text-align: center;
+font-weight: 700;
+font-size: 1.625em;
+color: #3b2d56;
+margin-top: 4em;
+margin-bottom: 0.3125em;
+position: relative;
+}
+
+
+
+
+
+
+
+
+.page-title::after {
+content: "";
+display: block;
+width: 7.5em;
+height: 0.125em;
+background-color: #3b2d56;
+margin: 0.5em auto 0;
+border-radius: 0.0625em;
+}
+
+
+
+
+
+/* ================= Service TABLE ================= */
+.services-table {
+width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 4%;
+}
+
+
+
+
+
+
+
+
+.servicess-table {
+width: 90%;
+margin: 0 auto;
+border-collapse: collapse;
+background-color: #f9f8ff;
+box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+border-radius: 0.625em;
+overflow: hidden;
+}
+
+
+
+
+
+
+
+
+.servicess-table th {
+background-color: #d9d4eb;
+color: #3b2d56;
+padding: 0.75em;
+text-align: center;
+font-weight: 600;
+font-size: 0.9375em;
+border-bottom: 0.125em solid #b8aedf;
+}
+
+
+
+
+
+
+
+
+.servicess-table td {
+padding: 0.75em;
+text-align: center;
+border-bottom: 0.0625em solid #e4e0f3;
+color: #333;
+font-size: 1em;
+}
+
+
+
+
+
+
+
+
+.servicess-table tr:nth-child(even) {
+background-color: #f3f0fa;
+}
+
+
+
+
+
+
+
+
+.servicess-table td:first-child,
+.servicess-table td:nth-child(2) {
+padding-left: 0;
+}
+
+
+
+
+
+
+
+
+.servicess-thumb {
+margin-left: 0;
+}
+
+
+
+
+
+
+
+
+.servicess-table tr:hover {
+background-color: #ebe6f8;
+transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+.service-thumb {
+width: 6.25em;      
+height: 4.375em;
+border-radius: 0.5em;
+object-fit: cover;      
+display: block;
+margin: 0 auto;
+border: 0.0625em solid #b8aedf;
+box-shadow: 0 0.125em 0.25em rgba(0,0,0,.06);
+}
+.edit-btn {
+background-color: #3b2d56;
+color: white;              
+font-weight: bold;        
+padding: 1em 1.5em;      
+border: none;              
+border-radius: 6px;      
+cursor: pointer;         
+transition: background-color 0.3s ease;
+text-align: center;       
+}
+
+
+
+
+
+
+
+
+.edit-btn:hover {
+background-color: #c4b0e6; 
+}
+
+/* ===== Modal ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; 
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden; 
+}
+
+
+
+
+
+.modal-content {
+  background-color: #f9f8ff;
+  padding: 1.5em 2em;
+  border-radius: 0.625em;
+  width: 400px;
+  max-width: 90%;
+  overflow: hidden; 
+  box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.15);
+  font-family: "Times New Roman", serif;
+  text-align: left;
+}
+
+.close-btn {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b2d56;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #c4b0e6;
+}
+
+/* ===== Modal Form ===== */
+#editServiceForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+#editServiceForm label {
+  font-weight: 600;
+  color: #3b2d56;
+}
+
+#editServiceForm input[type="text"],
+#editServiceForm input[type="file"],
+#editServiceForm textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 0.0625em solid #b8aedf;
+  border-radius: 0.5em;
+  font-size: 0.9375em;
+  font-family: "Times New Roman", serif;
+  background-color: #fff;
+}
+
+#editServiceForm textarea {
+  resize: none;
+  text-align: left;  
+  min-height: 80px;
+}
+
+/* ===== Buttons Long ===== */
+#editServiceForm button {
+  width: 100%;          
+  padding: 0.75em 1.5em; 
+  border-radius: 0.5em;
+  border: none;
+  font-weight: 600;
+  font-size: 0.9375em;
+  cursor: pointer;
+  margin-top: 0.5em;
+  transition: 0.3s;
+}
+
+#editServiceForm button[type="submit"] {
+  background-color: #3b2d56;
+  color: #fff;
+}
+
+#editServiceForm button[type="submit"]:hover {
+  background-color: #c4b0e6;
+}
+
+#editServiceForm button#deleteEdit {
+  background-color: #d9d4eb;
+  color: #3b2d56;
+}
+
+#editServiceForm button#deleteEdit:hover {
+  background-color: #c4b0e6;
+  color: #fff;
+}
+
+/* ===== Photo Preview ===== */
+#editPhotoPreview {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border: 0.0625em solid #b8aedf;
+  border-radius: 0.5em;
+  margin: 0.5em 0;
+  display: block;
+}
+
+#saveEditBtn {
+  background-color: #3b2d56;  
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  font-weight: 600;
+  font-size: 0.9375em;
+  cursor: pointer;
+  width: 100%;               
+  padding: 0.75em 1.5em;
+  transition: background-color 0.3s ease;
+}
+
+#saveEditBtn:hover {
+  background-color: #c4b0e6; 
+  color: white;
+}
+
+
+
+
+
+
+
+/* =================Service TABLE BUTTONS ================= */
+.btn {
+background-color: #3b2d56;
+color: white;
+border: none;
+padding: 1em 1.3em;
+border-radius: 0.375em;
+font-size: .8em;
+cursor: pointer;
+transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+.btn:hover {
+background-color: #c4b0e6;
+}
+
+
+
+
+
+
+
+
+/* ================= ACTION BUTTONS ================= */
+section.actions {
+text-align: center;
+margin-top: 2.1875em;
+margin-bottom: 3.75em;
+border: none;
+}
+
+
+
+
+
+
+
+
+.large-btn {
+display: inline-block;
+background-color: #3b2d56;
+color: white;
+padding: 0.75em 1.5em;
+border-radius: 0.625em;
+text-decoration: none;
+font-weight: 600;
+font-size: 0.875em;
+margin: 0 0.625em;
+transition: 0.3s;
+text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.large-btn:hover {
+background-color: #c4b0e6;
+}
+
+
+
+
+
+
+
+
+/*==========Form add new service=============*/
+
+
+
+
+
+
+
+
+.form-container {
+max-width: 40em;
+margin: 0 auto;
+padding: 1.5em;
+background-color: #f9f8ff;
+box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+border-radius: 0.5em;
+margin-bottom: 1em;
+margin-top: 2em;
+}
+
+
+
+
+
+
+
+.form-title {
+text-align: center;
+font-size: 1.75em;
+color: #3b2d56;
+font-weight: 600;
+margin-bottom: 1.25em;
+}
+
+
+
+
+
+
+
+
+/* Form Elements */
+.service-form {
+display: flex;
+flex-direction: column;
+gap: 0.9375em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.submit-btn {
+padding: 0.75em 1.5em;
+background-color: #3b2d56 ;
+color: white;
+border: none;
+border-radius: 0.625em;
+font-size: 1em;
+font-weight: 600;
+cursor: pointer;
+transition: 0.3s;
+margin-top: 0.625em;
+}
+
+
+
+
+
+
+
+
+.submit-btn:hover {
+background-color: #c4b0e6 ;
+}
+/* ================= STAFF MEMBERS SECTION ================= */
+.section-title {
+text-align: left;
+color: #3b2d56;
+font-size: 1.25em;
+font-weight: bold;
+margin-bottom: 1.25em;
+background-color: transparent;
+border: none;
+}
+
+
+
+
+
+
+
+
+.staff-container {
+width: 100%;
+max-width: 75em;
+margin: 0 auto;
+padding: 2.5em;
+background-color: #f9f8ff;
+border: 0.0625em solid #d9d4eb;
+border-radius: 0.75em;
+box-shadow: 0 0.25em 0.75em rgba(0,0,0,0.08);
+margin-top: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.staff-member {
+width: 96%;
+padding: 1.25em 1.875em;
+background-color: #f3f0fa;
+border-radius: 0.625em;
+box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.08);
+margin-bottom: 1.5625em;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+.staff-img img {
+width: 5em;
+height: 5em;
+border-radius: 50%;
+margin-right: 1.5625em;
+}
+
+
+
+
+
+
+
+
+.staff-details {
+flex: 1;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding-right: 1.5625em;
+}
+
+
+
+
+
+
+
+
+.delete-checkbox {
+margin-left: 0.9375em;
+}
+
+
+
+
+
+
+
+
+.delete-checkbox input {
+width: 1.25em;
+height: 1.25em;
+}
+
+
+
+
+
+
+
+
+.delete-btn {
+background-color: #3b2d56;
+color: white;
+padding: 0.9375em 1.875em;
+border-radius: 0.375em;
+font-weight: 600;
+font-size: 1em;
+cursor: pointer;
+margin-top: 1.875em;
+border: none;
+transition: background-color 0.3s;
+display: block;
+width: 12.5em;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+
+
+
+
+
+.delete-btn:hover {
+background-color: #c4b0e6;
+}
+
+
+
+
+
+
+
+
+
+/* ================= ADD NEW STAFF FORM ================= */
+.add-staff-container {
+  max-width: 500px;
+  margin: 2em auto 3em auto;
+  padding: 2em;
+  background-color: white;
+  border-radius: 2em;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-staff-container .section-title {
+  text-align: center;
+  color: #3b2d56;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  background-color: transparent;
+  border: none;
+}
+
+.add-staff-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.add-staff-form label {
+  font-weight: 600;
+  color: #3b2d56;
+  font-size: 0.95em;
+  margin-bottom: 0.3em;
+}
+
+.add-staff-form input {
+  padding: 0.7em;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95em;
+  background-color: #f9f8ff;
+  transition: all 0.3s ease;
+}
+
+.add-staff-form input:focus {
+  outline: none;
+  border-color: #6c63ff;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
+}
+
+.submit-btn {
+  padding: 0.9em 2em;
+  background-color: #3b2d56;
+  color: white;
+  border: none;
+  border-radius: 0.312em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1em;
+
+}
+
+.submit-btn:hover {
+   background-color: #c4b0e6 ;
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+
+
+
+/* ===========================Footer=========================== */
+
+
+
+
+
+
+footer {
+background-color: #d9d4eb;
+border-top: 0.125em solid #b8aedf;
+padding-top: 1.5625em;
+margin-top: auto;
+}
+
+
+
+
+
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+position: relative;
+}
+
+
+
+
+.footer-left {
+display: flex;
+align-items: center;
+gap: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer img.footer-logo {
+width: 5em;
+height: 5em;
+}
+
+
+
+
+
+
+.contact-info p {
+font-size: 0.875em;
+margin: 0;
+line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+.footer-right {
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+gap: 1.25em;
+position: absolute;
+right: 2.5em;
+}
+
+
+
+
+
+
+
+
+
+
+.social {
+text-align: center;
+}
+
+
+
+
+
+
+
+
+.social img {
+height: 1.25em;
+width: 1.25em;
+display: block;
+margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+.social p {
+margin-top: 0.3125em;
+font-size: 0.8125em;
+font-weight: 500;
+color: #333;
+}
+
+
+
+
+
+
+
+
+section {
+border-top: 0.0625em solid #b8aedf;
+border-bottom: 0.0625em solid #b8aedf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================Responsive NavBar for smaller screens=========================== */
+
+
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1.2em; /* smaller spacing on phones */
+    margin-right: 0;
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+  header img {
+    width: 6em;
+    height: 6em;
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
+}
+/* Responsive dark mode */
+@media (max-width: 1024px) {
+  .theme-toggle {
+    top: 15px;
+    right: 15px;
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 1em auto 0.5em auto;
+    display: block;
+  }
+}
+
+
+/*Responsive mission*/
+
+@media (max-width: 768px) {
+  .mission {
+    padding: 1.5em 1em;
+  }
+
+  .mission h2 {
+    font-size: 1.5em;
+  }
+
+  .mission p {
+    font-size: 1em;
+    width: 95%;
+  }
+}
+
+
+
+/*Responsive section part hp tablets*/
+@media (max-width: 1024px) {
+  .service-container {
+    gap: 25px; /* smaller spacing */
+  }
+
+  .service {
+    width: 45%;  /* two cards per row */
+    height: auto;
+  }
+
+  .service img {
+    height: 180px;
+  }
+}
+
+
+/*Responsive section part hp phone*/
+@media (max-width: 768px) {
+  .services h2 {
+    font-size: 1.6em;
+  }
+
+  .service-container {
+    flex-direction: column;  /* stack vertically */
+    align-items: center;
+  }
+
+  .service {
+    width: 90%;   /* full width card */
+    height: auto;
+  }
+
+  .service img {
+    height: 160px;
+  }
+
+  .service-info {
+    font-size: 0.85em;
+  }
+}
+
+
+/* ===================== Responsive Fact of the Day ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .fact-flex {
+    gap: 1em;
+  }
+
+  .fact img {
+    width: 7.5em;
+    height: 7.5em;
+  }
+
+  .fact p {
+    width: 28em;
+    font-size: 1em;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .fact-flex {
+    flex-direction: column;  /* stack vertically */
+    text-align: center;
+  }
+
+  .fact img {
+    width: 6em;
+    height: 6em;
+  }
+
+  .fact p {
+    width: 95%;       /* full width on phone */
+    font-size: 0.95em;
+  }
+}
+
+/* ===================== Responsive Reviews ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .review-container {
+    gap: 4em;          /* reduce huge gap */
+    padding: 1em;
+  }
+
+  .review {
+    flex: 0 0 16em;    /* slightly smaller card width */
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .reviews {
+    padding: 1em 0;
+  }
+
+  .review-container {
+    flex-direction: column;   /* stack vertically */
+    align-items: center;
+    gap: 1.5em;
+    overflow: visible;        /* remove horizontal scrolling */
+  }
+
+  .review {
+    width: 85%;
+    max-width: 20em;
+  }
+
+  .user h3 {
+    font-size: 0.95em;
+  }
+
+  p.stars {
+    font-size: 1em;
+  }
+}
+
+
+
+/* ===================== Responsive Footer ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .footer-container {
+    gap: 2em;               /* reduce spacing */
+    padding: 1.5em;
+  }
+
+  .footer-left,
+  .footer-right {
+    gap: 1em;
+  }
+
+  .footer-logo {
+    width: 7em;            /* smaller logo */
+  }
+
+  .social img {
+    width: 1.6em;
+    height: 1.6em;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;    /* stack everything */
+    text-align: center;
+    align-items: center;
+    gap: 1.2em;
+  }
+
+  .footer-left,
+  .footer-right {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 6em;               /* even smaller on phone */
+  }
+
+  .contact-info p {
+    font-size: 0.9em;
+    width: 90%;               /* avoid overflow */
+  }
+
+  .social {
+    flex-direction: column;
+    gap: 0.3em;
+  }
+
+  .social img {
+    width: 1.4em;
+    height: 1.4em;
+  }
+}
+
+
+
+/* ===================== Responsive Breadcrumbs ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .breadcrumbs {
+    font-size: 0.95em;   /* slightly smaller text */
+    padding-left: 1.5em; /* reduce spacing */
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .breadcrumbs {
+    font-size: 0.85em;
+    padding: 0.7em 1em;  /* tighter padding */
+    text-align: center;  /* center the breadcrumb on small screens */
+  }
+
+  .breadcrumbs a {
+    display: inline-block;
+    margin-bottom: 0.3em;  /* small breathing room if it wraps */
+  }
+
+  .current-page {
+    display: inline-block;
+    margin-left: 0.2em;
+  }
+}
+
+
+
+
+
+
+
+
+/* =============== SERVICES PAGE — TABLET =============== */
+@media (max-width: 1024px) {
+
+  .services-page {
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 10px;
+  }
+
+  .sort-box {
+    width: 180px; /* slightly smaller */
+  }
+
+  .service-container {
+    gap: 25px;
+  }
+
+  .service-box {
+    width: 45%;      /* two per row */
+    height: auto;    /* allow natural height */
+  }
+
+  .service-box img {
+    height: 180px;
+  }
+}
+
+
+
+
+
+
+/* =============== SERVICES PAGE — PHONE =============== */
+@media (max-width: 768px) {
+
+  .services-wrapper {
+    justify-content: center;
+  }
+
+  .services-page {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .sort-box {
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .services-list {
+    margin-left: 0;
+  }
+
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 90%;
+    height: auto;
+  }
+
+  .service-box img {
+    height: 160px;
+  }
+}
+
+
+
+
+
+
+/* Theme Switch Button */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background-color: #a998e6;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #cfc9e6;
+}
+
+
+
+
+
+
+
+
+/* ====================== DARK MODE ====================== */
+
+
+/* ========== DARK MODE HEADER ========== */
+body.dark-mode header {
+    background-color: #59467e;  /* darker lilac-pink that works with white */
+}
+
+body.dark-mode nav a {
+    color: white;   /* so the text shows clearly */
+}
+
+body.dark-mode a:hover {
+    color: #ffd6fa; /* soft pink hover */
+}
+
+body.dark-mode .breadcrumbs{
+color:#cb85f3;
+   background-color:  #59467e; 
+}
+
+body.dark-mode .breadcrumbs a {
+  color:#cb85f3;
+
+}
+body.dark-mode .current-page{
+ color: white;
+  
+}
+
+body.dark-mode {
+    background-color: #2f2a38;   /* soft muted dark lilac */
+    color: white;
+}
+
+/* Global text */
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode span,
+body.dark-mode a {
+    color: white;
+}
+
+/* Light borders */
+body.dark-mode section {
+    border-color: #a998d9;
+}
+
+/* Mission box */
+body.dark-mode .mission {
+    background-color: #3b3546;
+    border-color: #a998d9;
+}
+
+/* Services cards */
+body.dark-mode .service {
+    background-color: #3b3546;
+    border-color: #a998d9;
+}
+
+body.dark-mode .service-info {
+    color: white;
+}
+
+/* Fact of the day */
+body.dark-mode .fact {
+    background-color: #3b3546;
+}
+
+body.dark-mode #fact-title {
+    color: white;
+}
+
+body.dark-mode #fact-text {
+    color: #ffd6f3;   /* soft pink for cute visibility */
+}
+
+/* Reviews section */
+body.dark-mode .review {
+    background-color: #3b3546;
+    border-color: #a998d9;
+}
+
+body.dark-mode .reviews {
+    background-color: #2f2a38;
+}
+
+/* Footer stays same style but readable */
+body.dark-mode footer {
+    background-color: #3b3546;
+}
+
+
+
+
+
+/* ====== FOOTER CLOCK ====== */
+.footer-clock {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1.2em;        /* raises it higher */
+}
+
+#clock {
+    font-size: 1.3em;     /* larger */
+    font-weight: bold;
+    color: #3b2d56;       /* dark purple to match theme */
+}
+
+
+body.dark-mode #clock {
+    color: #ffd6fa;   /* soft pink in dark mode */
+}
+
+/* Back to Top Button */
+#myBtn {
+  display: none;
+  position: fixed;
+  top: 110px;       /* ✨ moves it down just a bit from the header */
+  right: 35px;      /* ✨ closer to center */
+  z-index: 9999;
+  background-color: #c7b3e5;
+  color: #3b2d56;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+/* Hover effect */
+#myBtn:hover {
+  background-color: #b9a3db;
+  transform: translateY(-3px);
+}
+
+
+
+body.dark-mode #myBtn {
+  background-color: #8d75bd;
+  color: white;
+}
+
+body.dark-mode #myBtn:hover {
+  background-color: #a48ad4;
+}
+
+
+
+
+
+
+/* Services Page Cards */
+body.dark-mode .service-box {
+    background-color: #3b3546;
+    border: 2px solid #a998d9 !important;  /* soft purple border */
+}
+
+body.dark-mode .service-box h3,
+body.dark-mode .service-box p {
+    color: white;
+}
+
+
+/* Price tag adjustment */
+body.dark-mode .price-tag {
+    background-color: #59467e;
+    border-color: #a998d9;
+    color: #ffd6fa;  /* soft pink for visibility */
+}
+
+
+body.dark-mode .services-list h2 {
+    color: white;
+    border-bottom-color: #a998d9;
+}
+
+body.dark-mode .services-page {
+    background-color: #2f2a38;
+}
+
+
+body.dark-mode .sort-box h3{
+  color:black;
+}
+
+/* Dark Mode for Find Your Flower Quiz  page*/
+
+body.dark-mode .quiz-section {
+    background-color: #2f2a38;
+}
+
+body.dark-mode .quiz-container {
+    background-color: #3b3546;
+    border: 0.125em solid #a998d9;
+    color: white;
+}
+
+body.dark-mode .quiz-container h2,
+body.dark-mode .quiz-container p,
+body.dark-mode .quiz-question p,
+body.dark-mode .quiz-question label {
+    color: white;
+}
+
+body.dark-mode hr {
+    border-top-color: #a998d9;
+}
+
+body.dark-mode .quiz-container button {
+    background-color: #6c56a5;
+    color: white;
+}
+
+body.dark-mode .quiz-container button:hover {
+    background-color: #b9a4ff;
+}
+
+body.dark-mode .quiz-result {
+    background-color: #3b3546 !important;
+    border: 1pt solid #a998d9 !important;
+    color: white !important;
+}
+
+body.dark-mode .quiz-result h3,
+body.dark-mode .quiz-result p {
+    color: white !important;
+}
+
+
+
+
+
+
+/*layan dark mode*/
+/* ========================= CUSTOMER DASHBOARD — DARK MODE ========================= */
+
+/* Whole page background + general text */
+body.dark-mode {
+    background-color: #2f2a38 !important;
+    color: white !important;
+}
+
+/* Dashboard title + sections */
+body.dark-mode .layan-dashboard h1,
+body.dark-mode .layan-dashboard h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .layan-dashboard h2::after {
+    background-color: #c7b5ff !important;
+}
+
+/* Table background + borders */
+body.dark-mode .layan-table {
+    background-color: #3b3546 !important;
+    border-color: #a998d9 !important;
+    box-shadow: none;
+}
+
+body.dark-mode .layan-table th {
+    background-color: #59467e !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .layan-table td {
+    background-color: #3b3546 !important;
+    color: #ffffff !important;
+    border-bottom: 1px solid #a998d9 !important;
+}
+
+/* Zebra rows */
+body.dark-mode .layan-table tr:nth-child(even) {
+    background-color: #362f42 !important;
+}
+
+/* Hover */
+body.dark-mode .layan-table tr:hover td {
+    background-color: #4a4358 !important;
+}
+
+/* Buttons */
+body.dark-mode .layan-btn {
+    background-color: #6c56a5 !important;
+    color: white !important;
+}
+
+body.dark-mode .layan-btn:hover {
+    background-color: #b9a4ff !important;
+}
+
+/* Breadcrumbs */
+body.dark-mode .breadcrumbs {
+    background-color: #59467e !important;
+    color: white !important;
+}
+
+body.dark-mode .breadcrumbs a {
+    color: #e5cfff !important;
+}
+
+body.dark-mode .breadcrumbs .current-page {
+    color: #ffffff !important;
+}
+
+/* Footer */
+body.dark-mode footer {
+    background-color: #3b3546 !important;
+    border-color: #a998d9 !important;
+}
+
+body.dark-mode footer p {
+    color: white !important;
+}
+
+body.dark-mode .social p {
+    color: white !important;
+}
+
+
+
+/* ============================================
+   CUSTOMER REQUEST PAGE — DARK MODE
+   (customer2.html support)
+   ============================================ */
+
+/* Whole form background */
+body.dark-mode .layan-form-section {
+    background-color: #3b3546 !important;
+    border-color: #a998d9 !important;
+    box-shadow: none !important;
+}
+
+/* Form labels */
+body.dark-mode .layan-form-section label {
+    color: #ffffff !important;
+}
+
+/* Text fields, select, textarea */
+body.dark-mode .layan-form-section input,
+body.dark-mode .layan-form-section select,
+body.dark-mode .layan-form-section textarea {
+    background-color: #2f2a38 !important;
+    color: #ffffff !important;
+    border: 1px solid #a998d9 !important;
+}
+
+/* Placeholder text */
+body.dark-mode .layan-form-section input::placeholder,
+body.dark-mode .layan-form-section textarea::placeholder {
+    color: #d8c9f0 !important;
+}
+
+/* Dropdown text */
+body.dark-mode .layan-form-section select option {
+    background-color: #2f2a38 !important;
+    color: white !important;
+}
+
+/* Page title */
+body.dark-mode .layan-form-section h2 {
+    color: #ffffff !important;
+    border-bottom-color: #a998d9 !important;
+}
+
+/* Submit button */
+body.dark-mode .layan-btn {
+    background-color: #6c56a5 !important;
+    color: white !important;
+}
+
+body.dark-mode .layan-btn:hover {
+    background-color: #b9a4ff !important;
+}
+
+/* Summary box (after submission) */
+body.dark-mode .layan-request-page div {
+    background-color: #3b3546 !important;
+    color: white !important;
+    border-color: #a998d9 !important;
+}
+
+
+
+/* ============================================
+   CUSTOMER EVALUATION PAGE — DARK MODE
+   (customer3.html support)
+   ============================================ */
+
+/* Main page background */
+body.dark-mode .layan-evaluation-page {
+    background-color: #2f2a38 !important;
+    color: white !important;
+}
+
+/* Form container */
+body.dark-mode .layan-form-section {
+    background-color: #3b3546 !important;
+    border-color: #a998d9 !important;
+    box-shadow: none !important;
+}
+
+/* Title */
+body.dark-mode .layan-form-section h2 {
+    color: white !important;
+}
+
+/* Labels */
+body.dark-mode .layan-evaluation-form label {
+    color: white !important;
+}
+
+/* Dropdown + textarea */
+body.dark-mode .layan-evaluation-form select,
+body.dark-mode .layan-evaluation-form textarea {
+    background-color: #2f2a38 !important;
+    border: 1px solid #a998d9 !important;
+    color: white !important;
+}
+
+/* Placeholder text */
+body.dark-mode .layan-evaluation-form textarea::placeholder {
+    color: #d8c9f0 !important;
+}
+
+/* Star rating (empty stars) */
+body.dark-mode .layan-star-rating label {
+    color: #72659b !important; /* muted lilac */
+}
+
+/* When hovering in dark mode */
+body.dark-mode .layan-star-rating label:hover,
+body.dark-mode .layan-star-rating label:hover ~ label {
+    color: #f7c948 !important;
+}
+
+/* Selected stars */
+body.dark-mode .layan-star-rating input:checked ~ label {
+    color: #f7c948 !important;
+}
+
+/* Submit button */
+body.dark-mode .layan-btn {
+    background-color: #6c56a5 !important;
+    color: white !important;
+}
+
+body.dark-mode .layan-btn:hover {
+    background-color: #b9a4ff !important;
+}
+
+/* Summary message box (after submit) */
+body.dark-mode .layan-evaluation-page div {
+    background-color: #3b3546 !important;
+    color: white !important;
+    border-color: #a998d9 !important;
+}
+
+/* Breadcrumbs support (same as other pages) */
+body.dark-mode .breadcrumbs {
+    background-color: #59467e !important;
+    color: white !important;
+}
+
+body.dark-mode .breadcrumbs a {
+    color: #e5cfff !important;
+}
+
+body.dark-mode .breadcrumbs .current-page {
+    color: #ffffff !important;
+}
+
+/* Deema Dark Mode */
+body.dark-mode .page-title {
+    color: white;
+}
+
+body.dark-mode .page-title::after {
+    background-color: #c7b5ff;
+}
+
+body.dark-mode .services-table {
+    background-color: #2f2a38;
+}
+
+body.dark-mode .servicess-table {
+    background-color: #3b3546;
+    border-color: #a998d9;
+}
+
+body.dark-mode .servicess-table th {
+    background-color: #59467e;
+    color: white;
+    border-bottom-color: #a998d9;
+}
+
+body.dark-mode .servicess-table td {
+    background-color: #3b3546;
+    color: white;
+    border-bottom-color: #a998d9;
+}
+
+body.dark-mode .servicess-table tr:nth-child(even) {
+    background-color: #362f42;
+}
+
+body.dark-mode .servicess-table tr:hover {
+    background-color: #4a4358;
+}
+
+body.dark-mode .edit-btn {
+    background-color: #6c56a5;
+}
+
+body.dark-mode .edit-btn:hover {
+    background-color: #b9a4ff;
+}
+
+body.dark-mode .large-btn {
+    background-color: #6c56a5;
+    color: white;
+}
+
+body.dark-mode .large-btn:hover {
+    background-color: #b9a4ff;
+}
+
+body.dark-mode .modal {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .modal-content {
+    background-color: #3b3546;
+    border-color: #a998d9;
+}
+
+body.dark-mode .modal-content h2 {
+    color: white;
+}
+
+body.dark-mode .close-btn {
+    color: white;
+}
+
+body.dark-mode .close-btn:hover {
+    color: #b9a4ff;
+}
+
+body.dark-mode #editServiceForm label {
+    color: white;
+}
+
+body.dark-mode #editServiceForm input,
+body.dark-mode #editServiceForm textarea {
+    background-color: #2f2a38;
+    color: white;
+    border-color: #a998d9;
+}
+
+body.dark-mode #saveEditBtn {
+    background-color: #6c56a5;
+}
+
+body.dark-mode #saveEditBtn:hover {
+    background-color: #b9a4ff;
+}
+
+body.dark-mode #deleteEdit {
+    background-color: #59467e;
+    color: white;
+}
+
+body.dark-mode #deleteEdit:hover {
+    background-color: #b9a4ff;
+}
+
+body.dark-mode .form-container {
+    background-color: #3b3546;
+    border-color: #a998d9;
+}
+
+body.dark-mode .form-title {
+    color: white;
+}
+
+body.dark-mode .service-form label {
+    color: white;
+}
+
+body.dark-mode .service-form input,
+body.dark-mode .service-form textarea {
+    background-color: #2f2a38;
+    color: white;
+    border: 1px solid #a998d9;
+}
+
+body.dark-mode .service-form input::placeholder,
+body.dark-mode .service-form textarea::placeholder {
+    color: #d8c9f0;
+}
+
+body.dark-mode .submit-btn {
+    background-color: #6c56a5;
+}
+
+body.dark-mode .submit-btn:hover {
+    background-color: #b9a4ff;
+}
+
+body.dark-mode .staff-container {
+    background-color: #3b3546;
+    border-color: #a998d9;
+}
+
+body.dark-mode .section-title {
+    color: white;
+    background-color: transparent;
+}
+
+body.dark-mode .staff-member {
+    background-color: #2f2a38;
+    border-color: #a998d9;
+}
+
+body.dark-mode .staff-details {
+    color: white;
+}
+
+body.dark-mode .staff-details p {
+    color: white;
+}
+
+body.dark-mode .delete-btn {
+    background-color: #6c56a5;
+}
+
+body.dark-mode .delete-btn:hover {
+    background-color: #b9a4ff;
+}
+
+body.dark-mode .add-staff-container {
+    background-color: #3b3546;
+    border-color: #a998d9;
+}
+
+body.dark-mode .add-staff-container .section-title {
+    color: white;
+}
+
+body.dark-mode .add-staff-form label {
+    color: white;
+}
+
+body.dark-mode .add-staff-form input {
+    background-color: #2f2a38;
+    color: white;
+    border: 2px solid #a998d9;
+}
+
+body.dark-mode .add-staff-form input::placeholder {
+    color: #d8c9f0;
+}
+
+body.dark-mode .add-staff-form input:focus {
+    border-color: #b9a4ff;
+    background-color: #3b3546;
+    box-shadow: 0 0 0 3px rgba(185, 164, 255, 0.2);
+}
+
+body.dark-mode main.content {
+    background-color: transparent;
+}
+
+/* Ghala Dark Mode*/
+body.dark-mode .about {
+    background-color: #2f2a38;
+}
+
+body.dark-mode .description h3 {
+    color: white;
+}
+
+body.dark-mode .description p {
+    color: white;
+}
+
+body.dark-mode .article-container {
+    background-color: #2f2a38;
+}
+
+body.dark-mode .article-container h3 {
+    color: white;
+}
+
+body.dark-mode .staff-container {
+    background-color: #2f2a38;
+}
+
+body.dark-mode .staff-card {
+    background-color: #3b3546;
+    border-color: #a998d9;
+}
+
+body.dark-mode .staff-card a {
+    color: white;
+}
+
+body.dark-mode .staff-card:hover {
+    background-color: #4a4358;
+}
+
+body.dark-mode .staff-card a:hover {
+    color: #b9a4ff;
+}
+
+body.dark-mode .form {
+    background-color: #2f2a38;
+    border-top-color: #a998d9;
+}
+
+body.dark-mode .join-form {
+    background-color: #3b3546;
+    border-color: #a998d9;
+}
+
+body.dark-mode .join-form h3 {
+    color: white;
+}
+
+body.dark-mode .join-form label {
+    color: white;
+}
+
+body.dark-mode .join-form input,
+body.dark-mode .join-form textarea {
+    background-color: #2f2a38;
+    color: white;
+    border: 1px solid #a998d9;
+}
+
+body.dark-mode .join-form input::placeholder,
+body.dark-mode .join-form textarea::placeholder {
+    color: #d8c9f0;
+}
+
+body.dark-mode .join-form button {
+    background-color: #6c56a5;
+}
+
+body.dark-mode .join-form button:hover {
+    background-color: #b9a4ff;
+}
+
+body.dark-mode .join-form input:disabled,
+body.dark-mode .join-form textarea:disabled,
+body.dark-mode .join-form button:disabled {
+    background-color: #59467e;
+    color: #d8c9f0;
+    opacity: 0.6;
+}
+
+body.dark-mode #formSuccessBox {
+    background-color: #3b3546;
+    border-color: #a998d9;
+    color: white;
+}
+
+body.dark-mode #formSuccessBox h3,
+body.dark-mode #formSuccessBox p {
+    color: white;
+}
+
+#providerDashboard main.content {
+    min-height: calc(100vh - 400px);
+}

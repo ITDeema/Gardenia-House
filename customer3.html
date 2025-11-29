@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluate a Service | Gardenia House</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body class="">
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+<header>
+  <nav>
+    <a href="Homepage.html"><img src="images/logo.png" alt="Gardenia House Logo"></a>
+    <a href="aboutus.html"><span class="tabs">About Us</span></a>
+    <a href="Services.html">Services</a>
+    <a href="provider-dashboard.html">Service Provider Dashboard</a>
+    <a href="customer1.html" class="active">Customer Dashboard</a>
+    <a href="find-flower.html">Find Your Flower</a>
+  </nav>
+</header>
+
+<!-- Breadcrumb --> 
+<div class="breadcrumbs"> 
+  <a href="Homepage.html">Home</a> › <a href="customer1.html">Customer Dashboard</a> <span class="current-page">› Evaluate A Service</span> 
+</div> 
+
+<main class="layan-evaluation-page">
+  <section class="layan-form-section">
+    <h2>Service Evaluation</h2>
+
+    <form class="layan-evaluation-form">
+      <label>Previous Service:</label>
+      <select required>
+        <option value="">Select..</option>
+        <option>Event Floral Decoration</option>
+        <option>Floral Design Workshops</option>
+        <option>Gardener Maintenance</option>
+        <option>Monthly Subscription Box</option>
+        <option>Floral Gift Delivery</option>
+      </select>
+
+      <label>Rating:</label>
+      <div class="layan-star-rating">
+  <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars">★</label>
+  <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">★</label>
+  <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">★</label>
+  <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">★</label>
+  <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">★</label>
+</div>
+
+
+      <label>Feedback:</label>
+      <textarea placeholder="User’s feedback.." rows="4"></textarea>
+
+      <button class="layan-btn" type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="images/logo.png" alt="Gardenia House Logo" class="footer-logo">
+      <div class="contact-info">
+        <p><strong>Contact us</strong><br>
+        Phone: +966 50 123 4567<br>
+         Email: GardeniaHouse@gmail.com<br>
+        © Copyright</p>
+      </div>
+    </div>
+
+    <div id="clock" class="footer-clock"></div>
+
+
+    <div class="footer-right">
+      <div class="social">
+        <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+        <p>@GardeniaHouse</p>
+      </div>
+      <div class="social">
+       <a href="https://x.com"><img src="images/twitter-alt.png" alt="X(Twitter)"></a>
+        <p>@GardeniaHouse</p>
+      </div>
+      <div class="social">
+       <a href="https://www.whatsapp.com"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+        <p>+966 512 345 678</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</footer>
+
+
+<script src="theme.js"></script>
+<script src="clock.js"></script>
+<script src="button.js"></script>
+
+<script>
+// =====================================
+// CUSTOMER 3 — FUN EVALUATION EFFECTS
+// =====================================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.querySelector(".layan-evaluation-form");
+
+    // Floating petal
+    function createPetal() {
+        const petal = document.createElement("div");
+        petal.innerHTML = "💮";
+        petal.style.position = "fixed";
+        petal.style.left = "50%";
+        petal.style.bottom = "20pt";
+        petal.style.fontSize = "18pt";
+        petal.style.opacity = "1";
+        petal.style.transition = "all 1s ease";
+        document.body.appendChild(petal);
+
+        setTimeout(() => {
+            petal.style.transform = "translateY(-80pt) scale(1.3)";
+            petal.style.opacity = "0";
+        }, 50);
+
+        setTimeout(() => petal.remove(), 1200);
+    }
+
+    form.addEventListener("submit", function(e){
+        e.preventDefault();
+
+        const service = form.querySelector("select").value;
+        const rating = form.querySelector("input[name='rating']:checked");
+        const feedback = form.querySelector("textarea").value.trim();
+
+        let errors = [];
+
+        if (!service) errors.push("Please select a service.");
+        if (!rating) errors.push("Please select a rating.");
+        if (!feedback) errors.push("Please enter feedback.");
+
+        if (errors.length > 0) {
+            alert("Fix the following:\n\n" + errors.join("\n"));
+            return;
+        }
+
+        // Dynamic message
+        let message = "";
+        if (rating.value >= 4) {
+            message = "🌟 Thank you for your positive review!";
+        } else if (rating.value == 3) {
+            message = "💜 Thanks! We'll improve for you.";
+        } else {
+            message = "😥 We're sorry — we will make things better.";
+        }
+
+        // Fade-in summary before redirect
+        const summary = document.createElement("div");
+        summary.style.padding = "15pt";
+        summary.style.marginTop = "15pt";
+        summary.style.textAlign = "center";
+        summary.style.background = "#ffffff";
+        summary.style.border = "1pt solid #d8c9f0";
+        summary.style.borderRadius = "8pt";
+        summary.style.opacity = "0";
+        summary.style.transition = "opacity 0.8s ease";
+
+        summary.innerHTML = `
+          <h3>${message}</h3>
+          <p>Redirecting...</p>
+        `;
+
+        form.insertAdjacentElement("afterend", summary);
+
+        setTimeout(() => summary.style.opacity = "1", 100);
+
+        createPetal(); // floating animation
+
+        setTimeout(() => {
+            window.location.href = "customer1.html";
+        }, 1400);
+    });
+
+});
+</script>
+<script src="theme.js"></script>
+</body>
+</html>

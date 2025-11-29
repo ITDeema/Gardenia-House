@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <meta charset="UTF-8">
+  <title>About Us | Gardenia House</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body class="">
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+<header>
+  <nav>
+    <a href="Homepage.html"><img src="images/logo.png" alt="Gardenia House Logo"></a>
+    <a href="aboutus.html" class="active"><span class="tabs">About Us</span></a>
+    <a href="Services.html">Services</a>
+    <a href="provider-dashboard.html">Service Provider Dashboard</a>
+    <a href="customer1.html">Customer Dashboard</a>
+    <a href="find-flower.html">Find Your Flower</a>
+  </nav>  
+</header>
+  
+
+ <div class="breadcrumbs">
+  <a href="HomePage.html">Home</a> ›
+  <span class="current"> About Us </span>
+</div>
+
+    
+<main>
+  <section class="about">
+      <div class="image-placeholder"> 
+        <img  id="photo" src="images/about_us_gif.gif" alt="Gardenia House Photo"  >
+</div>
+      <div class="description">
+        <h3>About Gardenia House</h3>
+        <p>
+         At Gardenia House, we bring the beauty of nature closer to you. Our platform is designed for flower andplant enthusiasts who value creativity,
+          sustainability, and personal expression. We offer a one-of-a-kind experience where you can design custom bouquets, schedule home or office 
+          deliveries, and even book professional planting services to transform your spaces into lush, vibrant environments.<br>
+        Whether you’re celebrating a special occasion, decorating your home, or simply sharing the gift of greenery, Gardenia House makes it easy
+         to create meaningful, eco-friendly moments filled with life and color. Our mission is to turn every arrangement and planting into 
+         a reflection of your unique style and love for nature.</p>     
+      </div>
+
+    </section>
+
+   <article class="article-container">
+<!-- Staff Members -->
+      <h3>Staff Members</h3>
+      <div class="staff-list">
+        <div class="staff-card"><img src="Profile/Abdullah.jpg" alt=" staff photo" ><a href="Abdullah-Profile.html"> Abdullah Hassan</a> </div>
+        <div class="staff-card"><img src="Profile/Anna.jpg" alt=" staff photo" ><a href="Anna-Profile.html"> Anna Muller</a> </div>
+        <div class="staff-card"><img src="Profile/David.jpg" alt=" staff photo" ><a href="David-Profile.html"> David Green</a> </div>
+        <div class="staff-card"><img src="Profile/Emily.jpg" alt=" staff photo" ><a href="Emily-Profile.html"> Emily Johnson</a> </div>
+        <div class="staff-card"><img src="Profile/Laila.jpg" alt=" staff photo" ><a href="Laila-Profile.html"> Laila Al-Shammari</a> </div>
+        <div class="staff-card"><img src="Profile/Michael.jpg" alt=" staff photo" ><a href="Michael-Profile.html"> Michael Roberts</a> </div>
+        <div class="staff-card"><img src="Profile/Omar.jpg" alt=" staff photo" ><a href="Omar-Profile.html">Omar Al-Mutairi</a> </div>
+        <div class="staff-card"><img src="Profile/Sara.jpg" alt=" staff photo" ><a href="Sara-Profile.html"> Sara Al-Harbi</a> </div>
+        <div class="staff-card"><img src="Profile/Sophia.jpg" alt=" staff photo" ><a href="Sophia-Profile.html"> Sophia Lee</a> </div>
+        <div class="staff-card"><img src="Profile/Yousef.jpg" alt=" staff photo" ><a href="Yousef-Profile.html"> Yousef Ibrahim</a> </div>
+      </div>
+      <br>
+
+
+
+       <!-- FORM -->
+  <div class="form">
+    <h3>Join Our Team</h3>
+  <div class="join-form">
+    <div id="formSuccessBox"></div>
+
+    <h3>Join Our Team</h3>
+    <form id="joinForm">
+  <label>Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name">
+
+  <label>Photo:</label>
+  <input type="file" id="photoInput" name="photo" accept="image/*">
+
+  <label>Date of Birth:</label>
+  <input type="date" id="dob" name="dob">
+
+  <label>Email:</label>
+  <input type="email" id="email" name="email" placeholder="example@email.com">
+
+  <label>Area of Expertise:</label>
+  <input type="text" id="expertise" name="expertise" placeholder="e.g. Florist">
+
+  <label>Skills:</label>
+  <input type="text" id="skills" name="skills" placeholder="e.g. Design, Planting">
+
+  <label>Education:</label>
+  <input type="text" id="education" name="education" placeholder="e.g. Diploma in Botany">
+
+  <label>Message:</label>
+  <textarea id="message" name="message" placeholder="Write a short message..."></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+  </div>
+  </div>
+</article> 
+</main>
+
+  <!-- FOOTER -->
+ <footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="images/logo.png" alt="Gardenia House Logo" class="footer-logo">
+      <div class="contact-info">
+        <p><strong>Contact us</strong><br>
+        Phone: +966 50 123 4567<br>
+         Email: GardeniaHouse@gmail.com<br>
+        © Copyright</p>
+      </div>
+    </div>
+
+    <div id="clock" class="footer-clock"></div>
+
+
+    <div class="footer-right">
+      <div class="social">
+        <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+        <p>@GardeniaHouse</p>
+      </div>
+      <div class="social">
+       <a href="https://x.com"><img src="images/twitter-alt.png" alt="X(Twitter)"></a>
+        <p>@GardeniaHouse</p>
+      </div>
+      <div class="social">
+       <a href="https://www.whatsapp.com"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+        <p>+966 512 345 678</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</footer>
+<script>
+document.getElementById("joinForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let errors = [];
+
+    let name = document.getElementById("name").value.trim();
+    let photo = document.getElementById("photoInput").files[0];
+    let dob = document.getElementById("dob").value;
+    let email = document.getElementById("email").value.trim();
+    let expertise = document.getElementById("expertise").value.trim();
+    let skills = document.getElementById("skills").value.trim();
+    let education = document.getElementById("education").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    // CHECK IF ALL EMPTY
+    if (!name && !photo && !dob && !email && !expertise && !skills && !education && !message) {
+        alert("All fields cannot be empty.");
+        return;
+    }
+
+    // CHECK EMPTY INDIVIDUALLY
+    function checkEmpty(value, fieldName) {
+        if (!value) errors.push("🌸 " + fieldName + " cannot be empty.");
+    }
+
+    checkEmpty(name, "Name");
+    checkEmpty(photo, "Photo");
+    checkEmpty(dob, "Date of Birth");
+    checkEmpty(email, "Email");
+    checkEmpty(expertise, "Area of Expertise");
+    checkEmpty(skills, "Skills");
+    checkEmpty(education, "Education");
+    checkEmpty(message, "Message");
+
+    // NAME VALIDATION
+    if (name && /^[0-9]/.test(name)) {
+        errors.push("🌸 Name cannot start with a number.");
+    }
+
+    // PHOTO TYPE VALIDATION
+    if (photo && !photo.type.startsWith("image/")) {
+        errors.push("🌸 Photo must be an image file.");
+    }
+
+    // DOB VALIDATION
+    if (dob) {
+        let maxDate = new Date("2008-12-31");
+        let userDate = new Date(dob);
+        if (userDate > maxDate) {
+            errors.push("🌸 Date of birth must be in 2008 or earlier.");
+        }
+    }
+
+    // SHOW ALL ERRORS
+    if (errors.length > 0) {
+        alert("Please fix the following:\n " + errors.join("\n "));
+        return;
+    }
+
+    // SUCCESS ALERT
+    alert("🌸 Thank you, " + name + "!\nYour Form has been submitted successfully.");
+
+    // DISABLE FORM + APPLY SHADOW
+    const formContainer = document.querySelector(".join-form");
+    const form = document.getElementById("joinForm");
+
+    form.querySelectorAll("input, textarea, button").forEach(el => el.disabled = true);
+    form.classList.add("form-disabled");
+
+    // SHOW SUCCESS MESSAGE ON TOP OF THE FORM
+    let box = document.getElementById("formSuccessBox");
+    box.innerHTML = `
+        <h3>Thank you, ${name}!</h3>
+        <p> 🌸 </p>
+        <p>Your form has been received successfully.</p>
+    `;
+    box.style.display = "block";
+
+});
+</script>
+
+
+<script src="theme.js"></script>
+<script src="clock.js"></script>
+<script src="button.js"></script>
+
+
+
+
+
+</body>
+
+
+</html>
+
+
+
+
