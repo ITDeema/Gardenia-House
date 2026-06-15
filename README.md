@@ -39,7 +39,6 @@ You can experience the Gardenia House interface through the following link:
 * **Layan Alsaab**
 * **Ghala Almshegheh**
 * **Deema Alquwaei**
-* **Maria Alshamrani**
 
 
 
