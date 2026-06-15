@@ -25,7 +25,7 @@
 ## 🔗 Try It Out
 
 You can experience the Gardenia House interface through the following link:
-[Gardenia House Live Demo](https://www.google.com/search?q=https://692b6638aeecbb3e45f57037--gardenia-house.netlify.app/)
+[Gardenia House Live Demo](https://692b6638aeecbb3e45f57037--gardenia-house.netlify.app/)
 
 ## 🛠 Technologies Used
 
